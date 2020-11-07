@@ -1,9 +1,7 @@
 from music_playlist import music_playlist
 from node import node
 
-
 playlist = music_playlist()
-
 
 n0 = node(0)
 n1 = node(1)
@@ -16,7 +14,6 @@ n2.next = n3
 
 playlist.head = n1
 playlist.tail = n3
-
 
 playlist.print_songs()
 
