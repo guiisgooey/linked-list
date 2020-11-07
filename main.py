@@ -3,22 +3,22 @@ from node import node
 
 playlist = music_playlist()
 
-n0 = node(0)
-n1 = node(1)
-n2 = node(2)
-n3 = node(3)
-n4 = node(4)
+s0 = node("santeria")
+s1 = node("gangster's paradise")
+s2 = node("walkin' on the sun")
+s3 = node("automation")
+s4 = node("cyboogie")
 
-n1.next = n2
-n2.next = n3
+s1.next = s2
+s2.next = s3
 
-playlist.head = n1
-playlist.tail = n3
+playlist.head = s1
+playlist.tail = s3
 
 playlist.print_songs()
 
-playlist.append(n4)
-playlist.prepend(n0)
+playlist.append(s4)
+playlist.prepend(s0)
 
 playlist.print_songs()
 
@@ -27,8 +27,8 @@ playlist.delete_from_tail()
 
 playlist.print_songs()
 
-print(playlist.find(3))
-print(playlist.delete(3))
+print(playlist.find("automation"))
+print(playlist.delete("automation"))
 
 playlist.print_songs()
 
