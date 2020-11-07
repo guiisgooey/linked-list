@@ -6,11 +6,9 @@ class music_playlist:
 
     def append(self, song):
         """inserts a new item in the linked list at the end of the list, making it the tail"""
-        current = self.head
-        while current.next is not None:
-            current = current.next
-        current.next = song
-
+        self.tail.next = song
+        self.tail = song
+        
     def prepend(self, song):
         """inserts a new item in the linked list at the front of the list, making it the head"""
         song.next = self.head
