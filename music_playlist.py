@@ -20,6 +20,7 @@ class music_playlist:
         while current is not None:
             print (current.data)
             current = current.next
+        print()
 
     def delete_from_head(self):
         """removes head of the linked list, making the second item the new head"""
